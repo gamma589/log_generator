@@ -1,0 +1,66 @@
+version: "3.6"
+
+networks:
+  splunknet:
+    driver: bridge
+    attachable: true
+
+services:
+  so1:
+    networks:
+      splunknet:
+        aliases:
+          - so1
+    image: splunk/splunk:latest
+    command: start
+    hostname: so1
+    container_name: so1
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_STANDALONE_URL=so1
+      - SPLUNK_HEAVY_FORWARDER_URL=hf1
+      - SPLUNK_ROLE=splunk_standalone
+      - SPLUNK_LICENSE_URI
+      - DEBUG=true
+    ports:
+      - 8000
+      - 8089
+    volumes:
+      - ./defaults:/tmp/defaults
+  
+
+  hf1:
+    networks:
+      splunknet:
+        aliases:
+          - hf1
+    image: splunk/splunk:latest
+    command: start
+    hostname: hf1
+    container_name: hf1
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_STANDALONE_URL=so1,so2
+      - SPLUNK_HEAVY_FORWARDER_URL=hf1,hf2
+      - SPLUNK_ROLE=splunk_heavy_forwarder
+      - SPLUNK_LICENSE_URI
+      - DEBUG=true
+    ports:
+      - 8000
+      - 8089
+    volumes:
+      - ./defaults:/tmp/defaults
+
+  lg1:
+    networks:
+      splunknet:
+        aliases:
+          - lg1
+    build: ./container
+    image: secureworks/loggenerator:0.2
+    hostname: lg1
+    container_name: lg1
+    environment:
+      - SYSLOG_TARGET=hf1
+      - TEMPLATE_NAME=cisco_asa
+      - CONFIG_MODE=environment

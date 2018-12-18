@@ -1,0 +1,252 @@
+%%TS_1%% %%PUB_IPV4%% %ASA-4-400013 IPS:2003 ICMP redirect from %%PUB_IPV4%% to %%PRIV_IPV4%% on interface dmz
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302013: Built outbound TCP connection 9 for outside:%%PUB_IPV4%%/22 (%%PUB_IPV4%%/22) to inside:%%PRIV_IPV4%%/53496 (%%PRIV_IPV4%%/53496)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-109025: Authorization denied (acl=acmetechinbound) for user '%%USER%%' from %%PUB_IPV4%%/64857 to %%PRIV_IPV4%%/53 on interface Outside using UDP
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302013: Built inbound TCP connection 518029 for Outside:%%PUB_IPV4%%/1123 (%%PUB_IPV4%%/1123) to Inside:%%PRIV_IPV4%%/8443 (%%PRIV_IPV4%%/8443) (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302014: Teardown TCP connection 518028 for Outside:%%PUB_IPV4%%/1122 to Inside:%%PRIV_IPV4%%/8443 duration 0:00:03 bytes 1449 TCP FINs (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-109025: Authorization denied (acl=acmetechoutbound) for user '%%USER%%' from %%PUB_IPV4%%/1118 to %%PRIV_IPV4%%/80 on interface Outside using TCP
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302014: Teardown TCP connection 518026 for Outside:%%PUB_IPV4%%/1120 to Inside:%%PRIV_IPV4%%/8443 duration 0:00:03 bytes 932 TCP FINs (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302016: Teardown UDP connection 517966 for Inside:%%PRIV_IPV4%%/30357 to NP Identity Ifc:%%PRIV_IPV4%%/161 duration 0:02:01 bytes 1055
+%%TS_1%% %%PUB_IPV4%% %ASA-3-713119: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, PHASE 1 COMPLETED
+%%TS_1%% %%PUB_IPV4%% %ASA-5-713075: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Overriding Initiator's IPSec rekeying duration from 2147483 to 28800 seconds
+%%TS_1%% %%PUB_IPV4%% %ASA-6-602303: IPSEC: An outbound remote access SA (SPI= 0x99DAB075) between %%PRIV_IPV4%% and %%PRIV_IPV4%% (user= %%USER%%) has been created.
+%%TS_1%% %%PUB_IPV4%% %ASA-5-713049: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Security negotiation complete for User (%%USER%%) Responder, Inbound SPI = 0xae9ee6c6, Outbound SPI = 0x99dab075
+%%TS_1%% %%PUB_IPV4%% %ASA-6-713905: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Starting P2 Rekey timer to expire in 27360 seconds
+%%TS_1%% %%PUB_IPV4%% %ASA-5-713120: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, PHASE 2 COMPLETED (msgid=78fb43eb)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-113012: AAA user authentication Successful : local database : user = %%USER%%
+%%TS_1%% %%PUB_IPV4%% %ASA-6-113003: AAA group policy for user %%USER%% is being set to Acme_techoutbound
+%%TS_1%% %%PUB_IPV4%% %ASA-6-113011: AAA retrieved user specific group policy (Acme_techoutbound) for user = %%USER%%
+%%TS_1%% %%PUB_IPV4%% %ASA-6-113009: AAA retrieved default group policy (Acme_techoutbound) for user = %%USER%%
+%%TS_1%% %%PUB_IPV4%% %ASA-6-113008: AAA transaction status ACCEPT : user = %%USER%%
+%%TS_1%% %%PUB_IPV4%% %ASA-5-713130: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Received unsupported transaction mode attribute: 5
+%%TS_1%% %%PUB_IPV4%% %ASA-6-713184: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Client Type: WinNT Client Application Version: %%PUB_IPV4%%0
+%%TS_1%% %%PUB_IPV4%% %ASA-6-713228: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PRIV_IPV4%%, Assigned private IP address %%PRIV_IPV4%% to remote user
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302015: Built inbound UDP connection 517976 for Outside:%%PUB_IPV4%%/1097 (%%PUB_IPV4%%/1097) to NP Identity Ifc:%%PRIV_IPV4%%/500 (%%PRIV_IPV4%%/500)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-713172: Group = Acme_techoutbound, IP = %%PRIV_IPV4%%, Automatic NAT Detection Status: Remote end IS behind a NAT device This end is NOT behind a NAT device
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302014: Teardown TCP connection 517973 for Outside:%%PUB_IPV4%%/2676 to Inside:%%PRIV_IPV4%%/80 duration 0:00:00 bytes 5125 TCP Reset-O (acmetechinbound)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302016: Teardown UDP connection 517953 for Outside:%%PUB_IPV4%%/51232 to Inside:%%PRIV_IPV4%%/7501 duration 0:02:01 bytes 36 (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302014: Teardown TCP connection 517934 for Outside:%%PUB_IPV4%%/1561 to Inside:%%PRIV_IPV4%%/8443 duration 0:05:02 bytes 297 Tunnel has been torn down (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-3-201008: Disallowing new connections.
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302020: Built ICMP connection for faddr %%PUB_IPV4%%/35949 gaddr %%PUB_IPV4%%/0 laddr %%PRIV_IPV4%%/0
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302016: Teardown UDP connection 517931 for Outside:%%PUB_IPV4%%/53560 to Inside:%%PRIV_IPV4%%/53 duration 0:02:07 bytes 245
+%%TS_1%% %%PUB_IPV4%% %ASA-6-109025: Authorization denied (acl=acmetechinbound) for user '%%USER%%' from %%PUB_IPV4%%/56190 to %%PRIV_IPV4%%/53 on interface Outside using UDP
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302020: Built inbound ICMP connection for faddr %%PUB_IPV4%%/1(LOCAL\%%USER%%) gaddr %%PUB_IPV4%%/0 laddr %%PRIV_IPV4%%/0 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721370 for outside:%%PUB_IPV4%%/60712(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 223 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721369 for outside:%%PUB_IPV4%%/54110(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 295 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721368 for outside:%%PUB_IPV4%%/61770(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 173 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721367 for outside:%%PUB_IPV4%%/52607(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 126 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 215721390 for outside:%%PUB_IPV4%%/50903 (%%PUB_IPV4%%/50903)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 (%%PRIV_IPV4%%/53) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list access-epn2-dmz2-in permitted udp epn2-dmz2/%%PRIV_IPV4%%(54877) -> epn2-win/%%PRIV_IPV4%%(53) hit-cnt 1 first hit [0xf0c8454b, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list fwepn4 denied tcp epn4-win/%%PRIV_IPV4%%(55267) -> outside/%%PUB_IPV4%%(21) hit-cnt 1 first hit [0xbc993276, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106103: access-list fmVPN-1300 denied udp for user '%%USER%%' outside/%%PUB_IPV4%%(137) -> inside1/%%PRIV_IPV4%%(137) hit-cnt 1 first hit [0x286364c7, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721389 for outside:%%PUB_IPV4%%/64763 (%%PUB_IPV4%%/64763)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721388 for outside:%%PUB_IPV4%%/61288 (%%PUB_IPV4%%/61288)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721387 for outside:%%PUB_IPV4%%/61287 (%%PUB_IPV4%%/61287)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302014: Teardown TCP connection 215721384 for outside:%%PUB_IPV4%%/57770(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/443 duration 0:00:00 bytes 2123 TCP FINs (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 215721386 for outside:%%PUB_IPV4%%/57562 (%%PUB_IPV4%%/57562)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 (%%PRIV_IPV4%%/53) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 215721385 for outside:%%PUB_IPV4%%/50263 (%%PUB_IPV4%%/50263)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 (%%PRIV_IPV4%%/53) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721384 for outside:%%PUB_IPV4%%/57770 (%%PUB_IPV4%%/57770)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/443 (%%PRIV_IPV4%%/443) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-733100: [ Scanning] drop rate-2 exceeded. Current burst rate is 0 per second, max configured rate is 8; Current average rate is 16 per second, max configured rate is 4; Cumulative total count is 58913
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list fwepn2 denied udp epn2-dmz2/%%PRIV_IPV4%%(59681) -> outside/%%PUB_IPV4%%(53) hit-cnt 1 first hit [0x314e2ef1, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721362 for outside:%%PUB_IPV4%%/53044(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 212 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list access-epn2-dmz2-in permitted udp epn2-dmz2/%%PRIV_IPV4%%(56775) -> outside/%%PUB_IPV4%%(53) hit-cnt 1 first hit [0x2cac285e, 0xe3d8664b]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list access-epn2-dmz2-in permitted udp epn2-dmz2/%%PRIV_IPV4%%(61845) -> outside/%%PUB_IPV4%%(53) hit-cnt 1 first hit [0x2cac285e, 0xe3d8664b]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list access-epn2-dmz2-in permitted udp epn2-dmz2/%%PRIV_IPV4%%(58736) -> epn2-win/%%PUB_IPV4%%(53) hit-cnt 1 first hit [0xf0c8454b, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 239723894 for outside:%%PUB_IPV4%%/59348 (%%PUB_IPV4%%/59348)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/8612 (%%PRIV_IPV4%%/8612) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721359 for outside:%%PUB_IPV4%%/55678(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 291 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721358 for outside:%%PUB_IPV4%%/60593(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 145 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721357 for outside:%%PUB_IPV4%%/62779(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 177 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-106100: access-list access-epn2-dmz2-in permitted udp epn2-dmz2/%%PRIV_IPV4%%(47153) -> epn2-win/%%PUB_IPV4%%(53) hit-cnt 1 first hit [0xf0c8454b, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721353 for outside:%%PUB_IPV4%%/54967(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 212 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106103: access-list fmVPN-1300 denied udp for user '%%USER%%' outside/%%PUB_IPV4%%(137) -> inside1/%%PRIV_IPV4%%(137) hit-cnt 1 first hit [0x286364c7, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721351 for outside:%%PUB_IPV4%%/55188(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 188 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302014: Teardown TCP connection 215721231 for outside:%%PUB_IPV4%%/64848(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/515 duration 0:00:04 bytes 167 TCP FINs (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106103: access-list fmVPN-1300 denied tcp for user '%%USER%%' outside/%%PUB_IPV4%%(57473) -> inside1/%%PRIV_IPV4%%(445) hit-cnt 1 first hit [0x172229cc, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302014: Teardown TCP connection 215721379 for outside:%%PUB_IPV4%%/64852(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/56324 duration 0:00:00 bytes 4814 TCP Reset-O (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 215721382 for outside:%%PUB_IPV4%%/56893 (%%PUB_IPV4%%/56893)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 (%%PRIV_IPV4%%/53) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-110002: Failed to locate egress interface for UDP from outside:%%PUB_IPV4%%/546 to %%PUB_IPV4%%/547
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106103: access-list fmVPN-1300 denied udp for user '%%USER%%' outside/%%PUB_IPV4%%(137) -> inside1/%%PRIV_IPV4%%(137) hit-cnt 1 first hit [0x286364c7, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721345 for outside:%%PUB_IPV4%%/61044(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 165 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 239723892 for outside:%%PUB_IPV4%%/63823 (%%PUB_IPV4%%/63823)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/8192 (%%PRIV_IPV4%%/8192) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721380 for outside:%%PUB_IPV4%%/61286 (%%PUB_IPV4%%/61286)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721346 for outside:%%PUB_IPV4%%/62730(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 214 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721343 for outside:%%PUB_IPV4%%/58156(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 535 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721379 for outside:%%PUB_IPV4%%/64852 (%%PUB_IPV4%%/64852)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/56324 (%%PRIV_IPV4%%/56324) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302014: Teardown TCP connection 215721365 for outside:%%PUB_IPV4%%/62151 to identity:%%PUB_IPV4%%/443 duration 0:00:00 bytes 5092 TCP FINs
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721378 for outside:%%PUB_IPV4%%/61285 (%%PUB_IPV4%%/61285)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302013: Built inbound TCP connection 215721377 for outside:%%PUB_IPV4%%/61284 (%%PUB_IPV4%%/61284)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721344 for outside:%%PUB_IPV4%%/64273(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 98 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302015: Built inbound UDP connection 215721376 for outside:%%PUB_IPV4%%/62926 (%%PUB_IPV4%%/62926)(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 (%%PRIV_IPV4%%/53) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-725007: SSL session with client outside:%%PUB_IPV4%%/62151 terminated.
+%%TS_1%% %%PUB_IPV4%% %ASA-6-109025: Authorization denied (acl=acmetechinbound) for user '%%USER%%' from %%PUB_IPV4%%/137 to %%PUB_IPV4%%/137 on interface Outside using UDP
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106023: Deny icmp src outside:%%PUB_IPV4%% dst epn3-dmzx:%%PRIV_IPV4%% (type 8, code 0) by access-group "epn3-dmzx-out" [0x0, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-7-710006: IGMP request discarded from %%PRIV_IPV4%% to outside:%%PUB_IPV4%%
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302014: Teardown TCP connection 1671358240 for outside:%%PUB_IPV4%%/51428 to inside:%%PRIV_IPV4%%/80 duration 0:00:00 bytes 16772 TCP FINs (YYYYYYYYYY@ACMETECH.COM)
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 1671358331 for outside:%%PUB_IPV4%%/62160 (YYYYYYYYYY@ACMETECH.COM)
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-7-609002: Teardown local-host inside:%%PRIV_IPV4%% duration 0:00:00
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302014: Teardown TCP connection 1671358237 for outside:%%PUB_IPV4%%/51192 to inside:%%PRIV_IPV4%%/443 duration 0:00:00 bytes 8238 TCP Reset-O (YYYYYYYYYY@ACMETECH.COM)
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302016: Teardown UDP connection 1490425518 for outside:%%PUB_IPV4%%/56821 to inside:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 108 (YYYYYYYYYY@ACMETECH.COM)
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-106012: Deny IP from %%PUB_IPV4%% to %%PUB_IPV4%%, IP options: "Router Alert"
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-7-710006: IGMP request discarded from %%PUB_IPV4%% to outside:%%PUB_IPV4%%
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-7-609001: Built local-host inside:%%PRIV_IPV4%%
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 1671358337 for outside:%%PUB_IPV4/1129 (%%PUB_IPV4/1129) to inside:%%PRIV_IPV4%%/10003 (%%PRIV_IPV4%%/10003) (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-725007: SSL session with client outside:%%PRIV_IPV4%%/18191 terminated.
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-7-710005: UDP request discarded from %%PRIV_IPV4%%/60899 to outside:%%PUB_IPV4%%/5355
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-302014: Teardown TCP connection 1671349288 for outside:%%PUB_IPV4%%/18191 to identity:%%PUB_IPV4%%/443 duration 0:01:06 bytes 7040 TCP Reset-I
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-6-109025: Authorization denied (acl=acmetechinbound) for user '%%USER%%' from %%PUB_IPV4%%/55424 to %%PUB_IPV4%%/53 on interface Outside using UDP
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-4-400032 IPS:4051 UDP Snork attack from %%PUB_IPV4%% to %%PUB_IPV4%% on interface outside
+%%TS_1%% %%HOSTNAME%% %%TS_1%% %%HOSTNAME%% : %ASA-4-400013 IPS:2003 ICMP redirect from %%PUB_IPV4%% to %%PRIV_IPV4%% on interface dmz
+%%TS_1%% %%HOSTNAME%% :%%TS_1%% UTC: %ASA-session-6-305012: Teardown dynamic TCP translation from outside:%%PUB_IPV4%%/59184(ACME\%%USER%%) to outside:%%PUB_IPV4%%/59184 duration 0:01:01
+%%TS_1%% %%PUB_IPV4%% %%TS_1%%: %FWSM-4-313004: Denied ICMP type=11, from laddr %%PRIV_IPV4%% on interface ACME_Corp to %%PUB_IPV4%%: no matching session
+%%TS_1%%: %ASA-6-338301: Intercepted DNS reply for name %%HOSTNAME%% from CALO-Backbone:%%PUB_IPV4%%/53 to CyberRange-Dev-Red:%%PUB_IPV4%%/54046, matched blacklist
+%%TS_1%%: %ASA-5-338302: Address %%PUB_IPV4%% discovered for domain %%HOSTNAME%% from blacklist. Adding rule
+%%TS_1%%: %ASA-4-338002: Dynamic Filter monitored blacklisted TCP traffic from CyberRange-Dev-Red:%%PUB_IPV4%%/56290 (%%PUB_IPV4%%/56290) to CALO-Backbone:%%PRIV_IPV4%%/80 (%%PRIV_IPV4%%/80), destination %%PUB_IPV4%% resolved from dynamic list:%%PRIV_IPV4%%, threat-level: very-high, category: Malware
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-5-722033: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> First TCP SVC connection established for SVC session.
+%%TS_1%% %%PUB_IPV4%% %%HOSTNAME%% %%TS_1%%: %ASA-4-722051: Group <GroupPolicy_AcmeFullAccess> User <%%USER%%> IP <%%PUB_IPV4%%> IPv4 Address <%%PRIV_IPV4%%> IPv6 address <%%IPV6%%> assigned to session
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-304001: %%PUB_IPV4%% Accessed URL %%PUB_IPV4%%:%%URI%%
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111008: User 'enable_15' executed the 'configure terminal' command.
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111010: User 'enable_15', running 'CLI' from IP ##INTERNAL_IP##, executed 'configure terminal'
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111008: User 'enable_15' executed the 'pager 25' command.
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111010: User 'enable_15', running 'CLI' from IP ##INTERNAL_IP##, executed 'pager 25'
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111008: User 'enable_15' executed the 'logging buffered debugging' command.
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'logging buffered debugging'
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111008: User 'enable_15' executed the 'debug http' command.
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'debug http'
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-5-502103: User priv level changed: Uname: enable_15 From: 1 To: 15
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-6-302021: Teardown ICMP connection for faddr fe80::c001:1dff:fe67:5e48/0 gaddr 2001:db8:1234:2010::2013/0 laddr 2001:db8:1234:2010::2013/0
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-6-302020: Built outbound ICMP connection for faddr fe80::c001:1dff:fe67:5e48/0 gaddr 2001:db8:1234:2010::2013/0 laddr 2001:db8:1234:2010::2013/0
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-6-302021: Teardown ICMP connection for faddr ##IP_V6##/0 gaddr ##IP_V6##/0 laddr ##IP_V6##/0
+%%TS_1%%	%%PUB_IPV4%%	%%HOSTNAME%%	%ASA-6-302020: Built outbound ICMP connection for faddr ##IP_V6##/0 gaddr ##IP_V6##/0 laddr ##IP_V6##/0
+%%TS_1%% %%PUB_IPV4%% %%TS_1%%: %ASA-4-113019: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PUB_IPV4%%, Session disconnected. Session Type: IPsec, Duration: 0h:18m:59s, Bytes xmt: 490905, Bytes rcv: 66596, Reason: Lost Service
+%%TS_1%% %%PUB_IPV4%% %%TS_1%%: %ASA-4-113019: Group = Acme_techoutbound, Username = %%USER%%, IP = %%PUB_IPV4%%, Session disconnected. Session Type: IPsec, Duration: 3d 0h:18m:59s, Bytes xmt: 490905, Bytes rcv: 66596, Reason: Lost Service
+%%TS_1%% xkfwan01 : %ASA-6-106100: access-list CSM_FW_ACL_xnlkssservernett01.137 denied tcp xnlkssservernett01.137/%%PUB_IPV4%%(57790) -> xnlkont01.32/%%PUB_IPV4%%(8) hit-cnt 1 300-second interval [0x5814d5d9, 0x0]
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302016: Teardown UDP connection 690076270 for UDMZ:2:%%PUB_IPV4%%/15989 to inside:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 141
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302016: Teardown UDP connection 690076270 for UDMZ2:%%PUB_IPV4%%/15989 to inside:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 141
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 690956322 for outside:%%PUB_IPV4%%/53974 (%%PUB_IPV4%%/53974) to UDMZ:2:%%PRIV_IPV4%%/443 (%%PRIV_IPV4%%/443)
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 690956322 for outside:%%PUB_IPV4%%/53974 (%%PUB_IPV4%%/53974) to UDMZ2:%%PRIV_IPV4%%/443 (%%PRIV_IPV4%%/443)
+%%TS_1%% %%HOSTNAME%% : %ASA-4-106023: Deny udp src outside:%%PUB_IPV4%%/11687 dst UDMZ:2:%%PRIV_IPV4%%/33439 by access-group "outside" [0xfd0ffa4a, 0x0]
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 691183334 for outside:%%PUB_IPV4%%/13775 (%%PUB_IPV4%%/13775) to UDMZ:2:%%PRIV_IPV4%%/443 (%%PRIV_IPV4%%/443)
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302013: Built inbound TCP connection 691250580 for outside:%%PUB_IPV4%%/4453 (%%PUB_IPV4%%/4453) to UDMZ:2:%%PRIV_IPV4%%/443 (%%PRIV_IPV4%%/443)
+%%TS_1%% %%HOSTNAME%% : %ASA-6-302015: Built outbound UDP connection 691309111 for UDMZ:2:%%PUB_IPV4%%/161 (%%PUB_IPV4%%/161) to inside:%%PRIV_IPV4%%/51234 (%%PRIV_IPV4%%/51234)
+%%TS_1%% %%PUB_IPV4%% : %ASA-6-113039: Group <SSLVPN> User <%%USER%%> IP <%%PRIV_IPV4%%> AnyConnect parent session started
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106023: Deny icmp src outside:A-%%PUB_IPV4%% dst epn3-dmzx:%%PRIV_IPV4%% (type 8, code 0) by access-group "epn3-dmzx-out" [0x0, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106023: Deny icmp src outside:A-%%PUB_IPV4%% dst epn3-dmzx:A-%%PRIV_IPV4%% (type 8, code 0) by access-group "epn3-dmzx-out" [0x0, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106023: Deny icmp src outside:A-%%PUB_IPV4%% dst inside:%%PRIV_IPV4%% (type 8, code 0) by access-group "inbound" [0x0, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-4-106023: Deny icmp src outside:A-%%PUB_IPV4%% dst inside:A-%%PRIV_IPV4%% (type 8, code 0) by access-group "inbound" [0x0, 0x0]
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721370 for outside:A-%%PUB_IPV4%%/60712(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 223 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721370 for outside:A-%%PUB_IPV4%%/60712(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 223 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721369 for outside:A-%%PUB_IPV4%%/54110(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 295 (%%USER%%)
+%%TS_1%% %%HOSTNAME%% %%TS_1%%: %ASA-6-302016: Teardown UDP connection 215721368 for outside:A-%%PUB_IPV4%%/61770(LOCAL\%%USER%%) to inside1:%%PRIV_IPV4%%/53 duration 0:00:00 bytes 173 (%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302016: Teardown UDP connection 290345893 for outside:###OUT_IP###/3389 to inside:###IN_IP###/50974(LOCAL\%%USER%%) duration 0:02:48 bytes 7025
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302013: Built inbound TCP connection 290446553 for Outside:###OUT_IP###/59187 (###OUT_IP###/59187)(LOCAL\%%USER%%) to Inside:###IN_IP###/443 (###IN_IP###/443)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302014: Teardown TCP connection 304488019 for Outside:###OUT_IP###/50867(LOCAL\%%USER%%) to Inside:###IN_IP###/88 duration 0:00:00 bytes 4514 TCP FINs
+%%TS_1%% %%PUB_IPV4%% %ASA-6-302013: Built outbound TCP connection 304488018 for outside:###OUT_IP###/80 (###OUT_IP###/80) to inside:###IN_IP###/50866 (###IN_IP###/50866)(LOCAL\%%USER%%)
+%%TS_1%% %%PUB_IPV4%% %ASA-6-305011: Built dynamic TCP translation from MS-VDI:###IN_IP###/50866(LOCAL\%%USER%%) to outside:###OUT_IP###/50866
