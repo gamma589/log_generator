@@ -21,6 +21,7 @@ services:
       - SPLUNK_HEAVY_FORWARDER_URL=hf1
       - SPLUNK_ROLE=splunk_standalone
       - SPLUNK_LICENSE_URI
+      - SPLUNK_PASSWORD=test#1234
       - DEBUG=true
     ports:
       - 8000
@@ -43,6 +44,7 @@ services:
       - SPLUNK_STANDALONE_URL=so1,so2
       - SPLUNK_HEAVY_FORWARDER_URL=hf1,hf2
       - SPLUNK_ROLE=splunk_heavy_forwarder
+      - SPLUNK_PASSWORD=test#1234
       - SPLUNK_LICENSE_URI
       - DEBUG=true
     ports:
