@@ -24,7 +24,7 @@ services:
       - SPLUNK_PASSWORD=test#1234
       - DEBUG=true
     ports:
-      - 8000
+      - 8000:8000
       - 8089
     volumes:
       - ./defaults:/tmp/defaults
