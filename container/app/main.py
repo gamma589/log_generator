@@ -109,13 +109,12 @@ def main_env():
     handler = logging.handlers.SysLogHandler(address=(syslog_server, 514),
                                              facility=19)
     syslogger.addHandler(handler)
-    out_file='log.log'
     while True:
         innerTemplate = '/log_generator/templates/'+template+'.template'
         line = generate_log(template=innerTemplate, lines=1, tstart='NOW')
         print(line)
         syslogger.log(msg=line, level=logging.INFO)
-        open('/opt/logs/'+template+'/'+out_file, 'a').write(line)
+        open('/opt/logs/'+template+'.log', 'a').write(line)
 
 def main():
     if main_mode == 'fileConfig':
