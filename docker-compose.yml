@@ -28,6 +28,7 @@ services:
       - 8089
     volumes:
       - ./defaults:/tmp/defaults
+      - splunk_logs:/opt/logdata
   
 
   hf1:
@@ -52,6 +53,7 @@ services:
       - 8089
     volumes:
       - ./defaults:/tmp/defaults
+      - splunk_logs:/opt/logdata
 
   lg1:
     networks:
@@ -62,7 +64,12 @@ services:
     image: secureworks/loggenerator:0.2
     hostname: lg1
     container_name: lg1
+    volumes:
+      - splunk_logs:/opt/logs
     environment:
       - SYSLOG_TARGET=hf1
       - TEMPLATE_NAME=cisco_asa
       - CONFIG_MODE=environment
+
+volumes:
+  splunk_logs:
