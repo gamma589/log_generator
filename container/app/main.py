@@ -114,7 +114,7 @@ def main_env():
         line = generate_log(template=innerTemplate, lines=1, tstart='NOW')
         print(line)
         syslogger.log(msg=line, level=logging.INFO)
-        open('/opt/logs/'+template+'.log', 'a').write(line)
+        open('/opt/logs/'+template+'.log', 'a').write(line+'\n')
 
 def main():
     if main_mode == 'fileConfig':
